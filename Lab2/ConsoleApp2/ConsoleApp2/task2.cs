@@ -5,17 +5,32 @@ class Task2
     static void Main(string[] args)
     {
         int n = 4;
-        int[,] matrix =
+        int[,] matrix = new int[n, n];
+        Random rnd = new Random();
+
+        
+        for (int i = 0; i < n; i++)
         {
-            { 1, -2, 5, 6 },
-            { 5, 6, -1, 2 },
-            { 2, -3, 4, 5 },
-            { -1, 2, 3, 6},
-        };
+            for (int j = 0; j < n; j++)
+            {
+                matrix[i, j] = rnd.Next(-50, 50);
+            }
+        }
+
+        
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                Console.Write(matrix[i, j] + "\t");
+            }
+            Console.WriteLine();
+        }
 
         int maxProductRow = -1;
         int maxProduct = int.MinValue;
 
+        
         for (int i = 0; i < n; i++)
         {
             int product = 1;
@@ -31,6 +46,7 @@ class Task2
             }
         }
 
+        
         int minElement = matrix[maxProductRow, 0];
         for (int j = 1; j < n; j++)
         {
@@ -39,8 +55,8 @@ class Task2
                 minElement = matrix[maxProductRow, j];
             }
         }
-        Console.WriteLine("Row with max product: "+(maxProductRow+1));
-        Console.WriteLine("Min element: " + minElement);
+
+        Console.WriteLine("Row with max product: " + (maxProductRow + 1));
+        Console.WriteLine("Smallest element: " + minElement);
     }
-    
 }
