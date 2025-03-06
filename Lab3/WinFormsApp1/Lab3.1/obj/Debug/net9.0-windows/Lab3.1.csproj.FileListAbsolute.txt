@@ -1,0 +1,15 @@
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\bin\Debug\net9.0-windows\Lab3.1.exe
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\bin\Debug\net9.0-windows\Lab3.1.deps.json
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\bin\Debug\net9.0-windows\Lab3.1.runtimeconfig.json
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\bin\Debug\net9.0-windows\Lab3.1.dll
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\bin\Debug\net9.0-windows\Lab3.1.pdb
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\Lab3.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\Lab3.1.AssemblyInfoInputs.cache
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\Lab3.1.AssemblyInfo.cs
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\Lab3.1.csproj.CoreCompileInputs.cache
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\Lab3.1.sourcelink.json
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\Lab3.1.dll
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\refint\Lab3.1.dll
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\Lab3.1.pdb
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\Lab3.1.genruntimeconfig.cache
+C:\Labs\C#Labs\Lab3\WinFormsApp1\Lab3.1\obj\Debug\net9.0-windows\ref\Lab3.1.dll
