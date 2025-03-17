@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!-- Заголовок -->
+        <TextBlock Text="Обробка даних про робітників" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,10,0,0"/>
+
+        <!-- Кнопка для запуску обробки -->
+        <Button Content="Обробити дані" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="40" Margin="0,100,0,0" Click="ProcessDataButton_Click"/>
+
+        <!-- Label для виведення повідомлення -->
+        <Label x:Name="ResultLabel" Content="" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Foreground="Green" Margin="0,0,0,40"/>
+        
+        <!-- ListView для відображення результатів -->
+        <ListView x:Name="workersListView" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="150" Margin="20,0,20,80">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Прізвище" DisplayMemberBinding="{Binding LastName}" Width="100"/>
+                    <GridViewColumn Header="Ім'я" DisplayMemberBinding="{Binding FirstName}" Width="100"/>
+                    <GridViewColumn Header="По-батькові" DisplayMemberBinding="{Binding Patronymic}" Width="100"/>
+                    <GridViewColumn Header="Адреса" DisplayMemberBinding="{Binding Address}" Width="200"/>
+                    <GridViewColumn Header="Національність" DisplayMemberBinding="{Binding Nationality}" Width="100"/>
+                    <GridViewColumn Header="Дата народження" DisplayMemberBinding="{Binding DateOfBirth}" Width="120"/>
+                    <GridViewColumn Header="№ цеху" DisplayMemberBinding="{Binding ShopNumber}" Width="80"/>
+                    <GridViewColumn Header="Табельний номер" DisplayMemberBinding="{Binding EmployeeNumber}" Width="120"/>
+                    <GridViewColumn Header="Рік працевлаштування" DisplayMemberBinding="{Binding HireYear}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
