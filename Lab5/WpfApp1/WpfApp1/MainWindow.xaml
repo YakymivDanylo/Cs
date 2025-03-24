@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Країна" Height="450" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Назва країни:" Grid.Row="0"/>
+        <TextBox x:Name="txtName" Grid.Row="1"/>
+
+        <TextBlock Text="Столиця:" Grid.Row="2"/>
+        <TextBox x:Name="txtCapital" Grid.Row="3"/>
+
+        <TextBlock Text="Населення (млн):" Grid.Row="4"/>
+        <TextBox x:Name="txtPopulation" Grid.Row="5"/>
+
+        <TextBlock Text="Площа (км²):" Grid.Row="6"/>
+        <TextBox x:Name="txtArea" Grid.Row="7"/>
+
+        <TextBlock Text="Офіційна мова:" Grid.Row="8"/>
+        <TextBox x:Name="txtLanguage" Grid.Row="9"/>
+
+        <TextBlock Text="Валюта:" Grid.Row="10"/>
+        <TextBox x:Name="txtCurrency" Grid.Row="11"/>
+
+        <TextBlock Text="Континент:" Grid.Row="12"/>
+        <TextBox x:Name="txtContinent" Grid.Row="13"/>
+
+        <StackPanel Grid.Row="14" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button Content="Зберегти" Click="SaveData_Click" Width="100"/>
+            <Button Content="Показати" Click="ShowInfo_Click" Width="100" Margin="10,0,0,0"/>
+            <Button Content="Густота" Click="EstimateDensity_Click" Width="100" Margin="10,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
