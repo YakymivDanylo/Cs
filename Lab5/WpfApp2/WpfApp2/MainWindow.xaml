@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <!-- Використовуємо Grid для основного компонування -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- ПІБ -->
+        <TextBlock Text="ПІБ:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10"/>
+        <TextBox Name="txtName" Grid.Row="0" Grid.Column="1" Margin="10" Width="300"/>
+
+        <!-- Курс -->
+        <TextBlock Text="Курс:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Margin="10"/>
+        <TextBox Name="txtCourse" Grid.Row="1" Grid.Column="1" Margin="10" Width="300"/>
+
+        <!-- Мінімальна оцінка -->
+        <TextBlock Text="Мінімальна оцінка:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="2" Margin="10"/>
+        <TextBox Name="txtGrade" Grid.Row="2" Grid.Column="1" Margin="10" Width="300"/>
+
+        <!-- Вибір типу студента (Студент, Студент-контрактник, Аспірант) -->
+        <TextBlock Text="Тип студента:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="3" Margin="10"/>
+        <ComboBox Name="cmbStudentType" Grid.Row="3" Grid.Column="1" Margin="10" Width="300">
+            <ComboBoxItem Content="Студент" />
+            <ComboBoxItem Content="Студент-контрактник" />
+            <ComboBoxItem Content="Аспірант" />
+        </ComboBox>
+
+        <!-- Керівник роботи (для Аспіранта) -->
+        <TextBlock Text="Керівник роботи:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="4" Margin="10"/>
+        <TextBox Name="txtSupervisor" Grid.Row="4" Grid.Column="1" Margin="10" Width="300"/>
+
+        <!-- Чи сплачено контракт (для Студент-контрактник) -->
+        <TextBlock Text="Чи сплачено контракт:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="5" Margin="10"/>
+        <CheckBox Name="chkPaidContract" Grid.Row="5" Grid.Column="1" Margin="10" />
+
+        <!-- Кнопки для дій -->
+        <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Name="btnShowInfo" Content="Показати інформацію" Width="150" Margin="5" Click="btnShowInfo_Click"/>
+            <Button Name="btnNextCourse" Content="Перевести на наступний курс" Width="200" Margin="5" Click="btnNextCourse_Click"/>
+            <Button Name="btnShowScholarship" Content="Показати стипендію" Width="150" Margin="5" Click="btnShowScholarship_Click"/>
+        </StackPanel>
+
+        <!-- Виведення інформації -->
+        <TextBlock Name="txtInfo" Grid.Row="7" Grid.ColumnSpan="2" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
