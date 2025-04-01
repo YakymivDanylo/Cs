@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "PostalRoutesApp/1.0.0": {
+        "runtime": {
+          "PostalRoutesApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PostalRoutesApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

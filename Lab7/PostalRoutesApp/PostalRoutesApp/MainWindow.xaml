@@ -1,0 +1,39 @@
+﻿<Window x:Class="PostalRoutesApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PostalRoutesApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="№ маршруту"/>
+            <TextBox x:Name="RouteNumberTextBox"/>
+
+            <TextBlock Text="Пункт призначення"/>
+            <TextBox x:Name="DestinationTextBox"/>
+
+            <TextBlock Text="Час виїзду (ГГ:ХХ:СС)"/>
+            <TextBox x:Name="DepartureTextBox"/>
+
+            <TextBlock Text="Час прибуття (ГГ:ХХ:СС)"/>
+            <TextBox x:Name="ArrivalTextBox"/>
+
+            <TextBlock Text="Тривалість обміну (хв)"/>
+            <TextBox x:Name="ExchangeDurationTextBox"/>
+
+            <Button Content="Додати маршрут" Click="AddRouteButton_Click"/>
+            <Button Content="Показати всі маршрути" Click="ShowRoutesButton_Click"/>
+
+            <TextBlock Text="Початковий час (ГГ:ХХ:СС)"/>
+            <TextBox x:Name="StartTimeTextBox"/>
+            <TextBlock Text="Кінцевий час (ГГ:ХХ:СС)"/>
+            <TextBox x:Name="EndTimeTextBox"/>
+            <Button Content="Фільтрувати маршрути" Click="FilterRoutesButton_Click"/>
+            
+            <Button Content="Підрахувати маршрути після 12:00" Click="CountAfternoonArrivalsButton_Click"/>
+            <Button Content="Знайти найдовший маршрут" Click="LongestRouteButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
