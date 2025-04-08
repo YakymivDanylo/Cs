@@ -1,0 +1,54 @@
+﻿<Window x:Class="FootballTeamsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FootballTeamsApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+   <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Назва команди:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="TeamNameTextBox" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+        <Label Content="Загальний бал:" Grid.Row="1" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="TotalScoreTextBox" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+        <Label Content="Забиті голи:" Grid.Row="2" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="GoalsScoredTextBox" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+        <Label Content="Пропущені голи:" Grid.Row="3" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="GoalsConcededTextBox" Grid.Row="3" Grid.Column="1" Margin="5"/>
+
+        <Button Content="Додати команду" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Click="AddTeamButton_Click"/>
+
+        <Label Content="Список команд:" Grid.Row="0" Grid.Column="2" Margin="5"/>
+        <ListBox x:Name="TeamsListBox" Grid.Row="1" Grid.Column="2" Grid.RowSpan="4" Grid.ColumnSpan="2" Margin="5" SelectionChanged="TeamsListBox_SelectionChanged"/>
+
+        <Label Content="Інформація про команду:" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Margin="5"/>
+        <TextBlock x:Name="TeamInfoTextBlock" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="4" Margin="5" TextWrapping="Wrap"/>
+
+        <Label Content="Результати відбору:" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="4" Margin="5"/>
+        <TextBlock x:Name="SelectionResultsTextBlock" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4" Margin="5" TextWrapping="Wrap"/>
+
+        <TextBlock x:Name="AverageScoreTextBlock" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="4" Margin="5"/>
+        <TextBlock x:Name="SelectedTeamsCountTextBlock" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="4" Margin="5"/>
+    </Grid>
+</Window>
