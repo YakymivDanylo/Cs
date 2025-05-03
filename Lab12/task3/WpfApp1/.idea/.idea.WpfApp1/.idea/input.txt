@@ -1,0 +1,4 @@
+Payment: $50.5 and €30, Length: 15.5 cm, Weight: 80 kg
+Temperature: 98.6°F, Date: May 5th 2023 at 2:30 PM
+Email: test@example.com, Phone: +1 (800) 123-4567
+URL: https://example.com, IP: 192.168.1.1, Hashtag: #WPF
